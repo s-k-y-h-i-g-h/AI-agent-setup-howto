@@ -11,11 +11,11 @@ Democratize access to frontier AI agents by creating a **zero-friction, self-doc
 
 ## Technical Architecture
 ### Three-Stage Bootstrap
-| Stage               | Tool               | Purpose                                                                 |
-|---------------------|--------------------|-------------------------------------------------------------------------|
-| **1. Windows `.exe`** | Inno Setup         | Installs Terminal, WSL, and kicks off PowerShell. Handles restarts.   |
-| **2. PowerShell**    | PowerShell         | Installs WSL + Arch Linux, downloads Stage 3 (Bash).                    |
-| **3. Bash (WSL)**    | Bash               | Installs OpenClaw, Hermes, FreeLLMAPI, and configures/launches them.   |
+| Stage               | Tool                   | Purpose                                                                                             |
+|---------------------|------------------------|-----------------------------------------------------------------------------------------------------|
+| **1. Windows `.exe`** | Inno Setup             | Installs Terminal, WSL, Docker Desktop, and kicks off PowerShell. Handles restarts.                |
+| **2. PowerShell**    | PowerShell             | Installs WSL + Arch Linux, ensures Docker Desktop is running, downloads Stage 3 (Bash).              |
+| **3. Bash (WSL)**    | Bash & Docker Compose  | Clones FreeLLMAPI, generates `.env`, starts FreeLLMAPI via Docker Compose. Installs/Configures OpenClaw & Hermes. |
 
 ### Key Features
 - **GUI for the `.exe`**:
@@ -64,12 +64,22 @@ Democratize access to frontier AI agents by creating a **zero-friction, self-doc
 
 ---
 
-## Documentation Plan
-### What’s Included
-1. **`README.md`**: High-level overview + screenshots.
-2. **`INSTALL.md`**: Step-by-step guide + troubleshooting.
-3. **`/scripts`**: All installer scripts (`install.iss`, `install.ps1`, `install.sh`, `repair.sh`).
-4. **`/docs`**: Detailed explanations (e.g., *"What is WSL?"*, *"Why Arch Linux?"*).
+## The Bigger Picture & Ethical Considerations
+
+This installer is **one step toward democratizing AI**. By making frontier tools **accessible to everyone**, we’re:
+- **Breaking down barriers** to entry.
+- **Empowering individuals** to take control of their tools.
+- **Building a community** of self-sufficient users.
+
+### Ethical AI & Security
+We acknowledge the dual-use nature of AI. While we champion open access, we also emphasize:
+
+- **Responsible Use**: Users should be aware of AI's potential for misuse (e.g., in propaganda, cyberattacks) and practice critical evaluation of AI outputs.
+- **Local Control**: Running models locally (as facilitated by this setup) enhances privacy and control, mitigating some risks associated with external, less transparent services.
+- **Verifiable Knowledge**: Our commitment to projects like OracleSystems CIC highlights the need for trustworthy, verifiable information, especially in sensitive domains.
+- **Community Vigilance**: Open-source development allows for community oversight and contribution to AI safety features.
+
+By providing these tools, we aim to foster a community that is not only technically proficient but also ethically aware and capable of navigating the evolving AI landscape safely.
 
 ---
 
@@ -78,11 +88,3 @@ Democratize access to frontier AI agents by creating a **zero-friction, self-doc
 2. **Test on a fresh Windows VM** (to ensure no dependencies are missing).
 3. **Gather feedback** from early adopters.
 4. **Iterate** based on user input.
-
----
-
-## Philosophy
-*"Matters of little concern should be treated seriously."*
-- **Respect the user’s time**: A GUI isn’t bloat—it’s **respect**.
-- **Live on the edge**: Arch Linux isn’t reckless—it’s **strategic**.
-- **Teach self-sufficiency**: The installer should **empower**, not **handhold**.

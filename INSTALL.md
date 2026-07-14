@@ -7,6 +7,25 @@
 
 ---
 
+## Step 0: Install Docker Desktop (Required for FreeLLMAPI)
+
+FreeLLMAPI runs its services in a Docker container. To proceed, you must install **Docker Desktop** on your Windows host:
+
+1.  **Download Docker Desktop**:
+    - [https://www.docker.com/products/docker-desktop/](https://www.docker.com/products/docker-desktop/)
+
+2.  **Run the installer**:
+    - Follow the prompts and **restart your computer** when prompted.
+
+3.  **Verify Docker is running**:
+    - Open **PowerShell** and run:
+      ```powershell
+      docker --version
+      ```
+    - You should see output like `Docker version 24.0.7, build afdd53b`.
+
+---
+
 ## Installation
 ### Option 1: One-Click Installer (Recommended)
 1. **Download the installer**:
@@ -48,7 +67,7 @@
    ```bash
    # Update and install dependencies
    sudo pacman -Syu --noconfirm
-   sudo pacman -S git python python-pip docker --noconfirm
+   sudo pacman -S git python python-pip docker docker-compose openssl --noconfirm
 
    # Install OpenClaw
    git clone https://github.com/OpenClaw/OpenClaw.git ~/OpenClaw
@@ -61,12 +80,19 @@
    pip install -r requirements.txt
 
    # Install FreeLLMAPI
-   git clone https://github.com/FreeLLMAPI/FreeLLMAPI.git ~/FreeLLMAPI
+   git clone https://github.com/tashfeenahmed/freellmapi.git ~/FreeLLMAPI
    cd ~/FreeLLMAPI
-   pip install -r requirements.txt
+   ENCRYPTION_KEY="$(openssl rand -hex 32)"
+   printf "ENCRYPTION_KEY=%s\nPORT=3001\n" "$ENCRYPTION_KEY" > .env
+   docker compose up -d
    ```
 
+**Important:**
+*   **Docker Desktop MUST be running on your Windows host** for `docker compose up` to work correctly within WSL.
+
 #### Step 4: Configure and Start Services
+*(Note: FreeLLMAPI is already started by `docker compose up -d`)*
+
 1. Configure OpenClaw:
    ```bash
    cd ~/OpenClaw
@@ -78,18 +104,6 @@
    cd ~/Hermes-Agent
    cp config.example.yaml config.yaml
    nano config.yaml  # Add your endpoint
-   ```
-3. Configure FreeLLMAPI:
-   ```bash
-   cd ~/FreeLLMAPI
-   cp config.example.yaml config.yaml
-   nano config.yaml  # Set host to 0.0.0.0
-   ```
-4. Start the services:
-   ```bash
-   nohup python ~/OpenClaw/openclaw.py > ~/openclaw.log 2>&1 &
-   nohup python ~/Hermes-Agent/hermes.py > ~/hermes.log 2>&1 &
-   nohup python ~/FreeLLMAPI/freellmapi.py > ~/freellmapi.log 2>&1 &
    ```
 
 ---
@@ -109,7 +123,7 @@ It's crucial to understand that AI technology, like any powerful tool, can be mi
 
 ### Your Role in Responsible AI Use
 - **Be Skeptical**: Always critically evaluate AI-generated content. Verify information from multiple sources, especially if it concerns sensitive topics like safety, security, or health.
-- **Use Locally**: Running models locally (like with FreeLLMAPI) gives you more control and privacy, reducing risks associated with external APIs.
+- **Use Locally**: Running models locally (like with FreeLLMAPI, which aggregates cloud providers) gives you more control and privacy, reducing risks associated with external APIs.
 - **Report Issues**: If you encounter a model providing harmful or unethical output, report it to the model provider and consider contributing to safer AI development through open-source communities.
 - **Stay Informed**: Keep up-to-date on AI ethics and security best practices.
 
@@ -120,6 +134,7 @@ It's crucial to understand that AI technology, like any powerful tool, can be mi
 | Issue                          | Fix                                                                 |
 |--------------------------------|---------------------------------------------------------------------|
 | WSL fails to install           | Enable virtualization in BIOS. Run `wsl --update` in PowerShell.   |
+| Docker Desktop not running     | Ensure Docker Desktop is open and running on Windows.             |
 | Docker permission denied       | Run `sudo usermod -aG docker $USER` in WSL and restart.             |
 | Port already in use            | Run `sudo lsof -i :3000` (or `3001`, `18790`) and kill the process. |
 | Model fails to load            | Check `~/hermes.log` for errors. Try 4-bit quantization.           |
