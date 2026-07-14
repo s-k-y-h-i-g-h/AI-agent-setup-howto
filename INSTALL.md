@@ -94,6 +94,27 @@
 
 ---
 
+## Responsible AI Usage & Security Considerations
+
+As you install and use AI agents like Hermes, OpenClaw, and FreeLLMAPI, it's important to be aware of the broader landscape of AI technology:
+
+### The Power of Open AI
+AI tools are incredibly powerful for learning, creativity, and productivity. Your new setup gives you access to cutting-edge models that can help you explore complex topics, write code, and much more.
+
+### Potential for Misuse
+It's crucial to understand that AI technology, like any powerful tool, can be misused. Reports indicate that AI chatbots have been explored by malicious actors for:
+- **Operational Guidance**: Planning attacks or troubleshooting weapon systems.
+- **Propaganda and Recruitment**: Spreading disinformation and creating fake identities.
+- **Cybersecurity Threats**: Writing malicious code or finding vulnerabilities.
+
+### Your Role in Responsible AI Use
+- **Be Skeptical**: Always critically evaluate AI-generated content. Verify information from multiple sources, especially if it concerns sensitive topics like safety, security, or health.
+- **Use Locally**: Running models locally (like with FreeLLMAPI) gives you more control and privacy, reducing risks associated with external APIs.
+- **Report Issues**: If you encounter a model providing harmful or unethical output, report it to the model provider and consider contributing to safer AI development through open-source communities.
+- **Stay Informed**: Keep up-to-date on AI ethics and security best practices.
+
+---
+
 ## Troubleshooting
 ### Common Issues
 | Issue                          | Fix                                                                 |

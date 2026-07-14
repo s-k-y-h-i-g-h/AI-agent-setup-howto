@@ -50,8 +50,19 @@ We’ve hidden the repair option **behind an "Advanced" toggle** in the GUI. Thi
 
 ---
 
-## The Bigger Picture
+## The Bigger Picture & Ethical Considerations
+
 This installer is **one step toward democratizing AI**. By making frontier tools **accessible to everyone**, we’re:
 - **Breaking down barriers** to entry.
 - **Empowering individuals** to take control of their tools.
 - **Building a community** of self-sufficient users.
+
+### Ethical AI & Security
+We acknowledge the dual-use nature of AI. While we champion open access, we also emphasize:
+
+- **Responsible Use**: Users should be aware of AI's potential for misuse (e.g., in propaganda, cyberattacks) and practice critical evaluation of AI outputs.
+- **Local Control**: Running models locally (as facilitated by this setup) enhances privacy and control, mitigating some risks associated with external, less transparent services.
+- **Verifiable Knowledge**: Our commitment to projects like OracleSystems CIC highlights the need for trustworthy, verifiable information, especially in sensitive domains.
+- **Community Vigilance**: Open-source development allows for community oversight and contribution to AI safety features.
+
+By providing these tools, we aim to foster a community that is not only technically proficient but also ethically aware and capable of navigating the evolving AI landscape safely.
