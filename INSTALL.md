@@ -129,6 +129,20 @@ It's crucial to understand that AI technology, like any powerful tool, can be mi
 
 ---
 
+## Beyond Installation: Empowering Your Workflow
+
+Now that you have your AI agents set up, take your projects to the next level with the **GitHub Ecosystem Workflow**:
+
+📖 **[GitHub Ecosystem Workflow Guide](docs/github-workflow.md)**
+Learn how to:
+-   Set up GitHub for version control and collaboration.
+-   Generate Personal Access Tokens (PATs) to give your AI agents secure access.
+-   Use GitHub to host documents, manage projects, and collaborate effectively.
+
+This is the same workflow we use to build this installer—now it's yours to leverage!
+
+---
+
 ## Troubleshooting
 ### Common Issues
 | Issue                          | Fix                                                                 |
