@@ -1,0 +1,23 @@
+<svg width="100%" height="200" viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Left: Messy Terminal -->
+  <rect x="20" y="20" width="360" height="160" rx="8" fill="#1a1a1a" stroke="#555" stroke-width="1"/>
+  <text x="40" y="50" font-family="monospace" font-size="12" fill="#e0e0e0">$ sudo apt install wsl archlinux</text>
+  <text x="40" y="70" font-family="monospace" font-size="12" fill="#e0e0e0">[sudo] password for user:</text>
+  <text x="40" y="90" font-family="monospace" font-size="12" fill="#e0e0e0">$ git clone https://github.com/...</text>
+  <text x="40" y="110" font-family="monospace" font-size="12" fill="#e0e0e0">$ docker run -it --rm ...</text>
+  <text x="40" y="140" font-family="monospace" font-size="12" fill="#ff6b6b">⚠️ 17 errors, 3 warnings</text>
+
+  <!-- Right: Clean Installer GUI -->
+  <rect x="420" y="20" width="360" height="160" rx="8" fill="#1a1a1a" stroke="#555" stroke-width="1"/>
+  <rect x="440" y="40" width="320" height="40" rx="4" fill="#00ff88"/>
+  <text x="460" y="65" font-family="sans-serif" font-size="16" font-weight="bold" fill="#0f0f0f">Zero-to-Hermes Installer</text>
+  <rect x="440" y="100" width="150" height="40" rx="4" fill="#00ff88"/>
+  <text x="460" y="125" font-family="sans-serif" font-size="14" fill="#0f0f0f">Install Now</text>
+  <text x="600" y="125" font-family="sans-serif" font-size="12" fill="#e0e0e0">✅ WSL Installed</text>
+  <text x="600" y="145" font-family="sans-serif" font-size="12" fill="#e0e0e0">✅ Arch Linux Ready</text>
+  <text x="600" y="165" font-family="sans-serif" font-size="12" fill="#e0e0e0">✅ AI Agents Configured</text>
+
+  <!-- Divider -->
+  <line x1="400" y1="20" x2="400" y2="180" stroke="#555" stroke-width="1"/>
+  <text x="400" y="10" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#e0e0e0">VS</text>
+</svg>
