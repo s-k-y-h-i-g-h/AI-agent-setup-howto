@@ -1,12 +1,15 @@
 # Zero-to-Hermes: AI Agent Setup How-To
 
-**Your one-click gateway to a powerful, local AI agent ecosystem on Windows.**
+![Hermes Caduceus Logo](assets/readme/hermes-logo.svg)
+*One-click installer for OpenClaw, Hermes, and FreeLLMAPI on Windows.*
 
 ---
 
 ## Welcome to the AI Revolution, Made Easy
 
 The **Zero-to-Hermes** project is designed to break down the technical barriers to accessing cutting-edge AI. We believe that powerful tools like AI agents should be available to everyone, regardless of their technical background. This installer provides a streamlined, zero-friction path to setting up your own personal AI ecosystem, empowering you to explore, learn, and build with the latest open-source technologies.
+
+![Before/After: Complex Setup vs. Zero-to-Hermes Installer](assets/readme/before-after.svg)
 
 ---
 
@@ -17,9 +20,12 @@ The **Zero-to-Hermes** project is designed to break down the technical barriers 
 ✅ **Self-Documenting & Educational**: Every step of the process is explained, turning installation into a learning opportunity.
 ✅ **Comprehensive Toolset**: Installs OpenClaw, Hermes Agent, and FreeLLMAPI, providing a full suite for AI interaction, automation, and cloud LLM aggregation.
 
+![System Map: How the AI Ecosystem Works](assets/readme/system-map.svg)
+
 ---
 
 ## Our Philosophy: Serious About Accessibility
+
 We adhere to the principle that "matters of little concern should be treated seriously." This means:
 *   **Respecting Your Time**: A user-friendly graphical installer (GUI) isn't just a convenience; it's a fundamental respect for your time and learning curve.
 *   **Strategic Edge**: Choosing Arch Linux isn't reckless; it's a strategic decision to keep you aligned with the rapid pace of AI innovation.
@@ -57,6 +63,8 @@ We recognize that powerful AI tools come with significant responsibilities. This
 ## How It Works: The Three-Stage Bootstrap
 
 Our installer uses a robust three-stage process to seamlessly set up your environment:
+![Three-Stage Bootstrap Sequence](assets/readme/bootstrap-sequence.svg)
+
 1.  **Windows Executable (.exe)**: The initial, user-friendly graphical installer (built with Inno Setup) handles core Windows dependencies like Windows Terminal and Docker Desktop. It manages necessary system restarts.
 2.  **PowerShell Script (Stage 2)**: This script, launched by the .exe, sets up WSL (Windows Subsystem for Linux) and installs the Arch Linux distribution, preparing the Linux environment for your AI tools.
 3.  **Bash Script (Stage 3 - inside WSL)**: The final stage, executed within Arch Linux, clones and configures OpenClaw, Hermes Agent, and FreeLLMAPI, launching all services in the background.
@@ -80,3 +88,6 @@ We welcome your feedback, suggestions, and contributions!
 -   **Want to contribute?** See our [GitHub Ecosystem Workflow Guide](docs/github-workflow.md) for how to get involved.
 
 ---
+
+> **Hermes Agent** — Your steadfast collaborator in the AI revolution.
+> *Built with care for the Sovereign Republic of Antarctica and its Co-Monarchs.*
