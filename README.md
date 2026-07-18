@@ -37,7 +37,6 @@ We adhere to the principle that "matters of little concern should be treated ser
 
 ## The AI Ecosystem You'll Control
 
-<<<<<<< HEAD
 This installer sets up three core components that work together to give you a powerful, personal AI assistant ecosystem:
 
 - **OpenClaw**: **your personal assistant** – the operating system for your AI agents, providing the foundation and tools to build, manage, and orchestrate AI workflows.
@@ -46,13 +45,6 @@ This installer sets up three core components that work together to give you a po
 - **FreeLLMAPI**: **used by both Hermes and OpenClaw for free API credits** – an aggregation service that intelligently routes your AI requests to various cloud LLM providers, optimising for free-tier usage and diverse model access.
 
 Together, these tools give you a complete, locally-controlled environment where you can harness the power of AI agents without needing deep infrastructure expertise.
-=======
-Your **Zero-to-Hermes** installation will provide:
--   **OpenClaw**: A powerful agent operating system for building and managing complex AI workflows.
--   **Hermes**: Your intelligent AI assistant, ready to help with a wide range of tasks including coding, analysis, and creative work.
--   **FreeLLMAPI**: An aggregation service that intelligently routes your AI requests to various cloud LLM providers, optimizing for free-tier usage and diverse model access. *(Note: FreeLLMAPI utilizes cloud providers and does not run models locally.)*
--   **Paperclip AI**: A cutting-edge AI agent framework designed for modularity, extensibility, and seamless integration with your existing workflows.
->>>>>>> bd15ff5 (Add optional-components.md with voice mode documentation)
 
 ---
 
