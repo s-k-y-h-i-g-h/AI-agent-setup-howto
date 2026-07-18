@@ -1,7 +1,8 @@
 # Zero-to-Hermes: AI Agent Setup How-To
 
 ![Hermes Caduceus Logo](assets/readme/hermes-logo.svg)
-*One-click installer for OpenClaw, Hermes, and FreeLLMAPI on Windows.*
+*One-click installer for OpenClaw, Hermes (the swift AI agent), and FreeLLMAPI on Windows.*
+*Zero to Hermes: from no AI agent to having your own Hermes-powered agent team in minutes.*
 
 ---
 
@@ -19,6 +20,7 @@ The **Zero-to-Hermes** project is designed to break down the technical barriers 
 ✅ **Always on the Bleeding Edge**: Built on Arch Linux's rolling release model, ensuring you always have the most up-to-date versions of your AI tools as soon as they're available.
 ✅ **Self-Documenting & Educational**: Every step of the process is explained, turning installation into a learning opportunity.
 ✅ **Comprehensive Toolset**: Installs OpenClaw, Hermes Agent, and FreeLLMAPI, providing a full suite for AI interaction, automation, and cloud LLM aggregation.
+✅ **Paperclip-powered Agent Teams**: Get your own organization (team) of AI agents via Paperclip that you can orchestrate to tackle complex tasks, with Hermes as the intelligent worker agent doing the actual reasoning, coding, and creative work.
 
 ![System Map: How the AI Ecosystem Works](assets/readme/system-map.svg)
 
@@ -30,13 +32,6 @@ We adhere to the principle that "matters of little concern should be treated ser
 *   **Respecting Your Time**: A user-friendly graphical installer (GUI) isn't just a convenience; it's a fundamental respect for your time and learning curve.
 *   **Strategic Edge**: Choosing Arch Linux isn't reckless; it's a strategic decision to keep you aligned with the rapid pace of AI innovation.
 *   **Empowering Self-Sufficiency**: While providing shortcuts, we also aim to explain the underlying processes, enabling you to understand and eventually master your AI environment.
-
----
-
-## Getting Started
-
-🚀 **[Installation Guide](INSTALL.md)**: Your step-by-step instructions to get your AI agent ecosystem up and running.
-📖 **[GitHub Ecosystem Workflow Guide](docs/github-workflow.md)**: Learn how to master GitHub for version control, collaborative projects, and seamlessly integrating your AI agents into your development workflow. This is the very workflow we use to build this installer!
 
 ---
 
