@@ -42,11 +42,11 @@ We adhere to the principle that "matters of little concern should be treated ser
 ---
 
 ## The AI Ecosystem You'll Control
+## What This Installer Sets Up
 
-Your **Zero-to-Hermes** installation will provide:
--   **OpenClaw**: A powerful agent operating system for building and managing complex AI workflows.
--   **Hermes Agent**: Your intelligent AI assistant, ready to help with a wide range of tasks including coding, analysis, and creative work.
--   **FreeLLMAPI**: An aggregation service that intelligently routes your AI requests to various cloud LLM providers, optimizing for free-tier usage and diverse model access. *(Note: FreeLLMAPI utilizes cloud providers and does not run models locally.)*
+-   **OpenClaw**: your personal assistant
+-   **Paperclip**: your organisation of AI agents
+-   **FreeLLMAPI**: used by both Hermes and OpenClaw for free API credits
 
 ---
 
