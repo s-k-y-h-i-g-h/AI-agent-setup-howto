@@ -30,7 +30,7 @@ Democratize access to frontier AI agents by creating a **zero-friction, self-doc
 
 ## Why Arch Linux?
 - **Rolling release**: Always up-to-date with **latest AI tools** (no waiting for Ubuntu LTS).
-- **Minimalist**: No bloat—just what’s needed for **OpenClaw, Hermes, and FreeLLMAPI**.
+- **Minimalist**: No bloat—just what’s needed for **OpenClaw, Hermes, FreeLLMAPI, and Paperclip AI**.
 - **User control**: Forces **understanding of the system** (aligns with the ethos of **self-sufficiency**).
 
 ---
@@ -43,7 +43,7 @@ Democratize access to frontier AI agents by creating a **zero-friction, self-doc
 *(Mockup: Progress bar with restart prompt for WSL installation)*
 
 ### Screen 3: Completion
-*(Mockup: Completion screen with links to OpenClaw, Hermes, and FreeLLMAPI)*
+*(Mockup: Completion screen with links to OpenClaw, Hermes, FreeLLMAPI, and Paperclip AI)*
 
 ---
 

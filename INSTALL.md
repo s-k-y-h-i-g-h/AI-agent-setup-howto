@@ -28,7 +28,7 @@ FreeLLMAPI runs its services in a Docker container. To proceed, you must install
 
 ## Installation
 ### Option 1: One-Click Installer (Recommended)
-1. **Download the installer**:
+1.  **Download the installer**:
    - [Latest Release](https://github.com/s-k-y-h-i-g-h/AI-agent-setup-howto/releases)
 2. **Run the `.exe`**:
    - Double-click `HermesAI_Installer.exe`.
@@ -39,6 +39,7 @@ FreeLLMAPI runs its services in a Docker container. To proceed, you must install
    - OpenClaw: [http://localhost:18790](http://localhost:18790)
    - Hermes: [http://localhost:3000](http://localhost:3000)
    - FreeLLMAPI: [http://localhost:3001](http://localhost:3001)
+   - Paperclip AI: [http://localhost:3002](http://localhost:3002)
 
 ### Option 2: Manual Installation
 *(For advanced users who want to learn the process.)*

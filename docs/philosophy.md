@@ -8,12 +8,13 @@ This project is **more than an installer**—it’s a **manifesto for accessible
 
 ---
 
-## Why Arch Linux?
+### Why Arch Linux?
 ### Rolling Release
 AI tools evolve **daily**. Arch Linux’s rolling release model ensures you’re **always up-to-date** with the latest versions of:
 - **OpenClaw**
 - **Hermes**
 - **FreeLLMAPI**
+- **Paperclip AI**
 
 ### Minimalism
 Arch Linux is **lightweight**—no bloat, no unnecessary packages. This means:
@@ -66,3 +67,7 @@ We acknowledge the dual-use nature of AI. While we champion open access, we also
 - **Community Vigilance**: Open-source development allows for community oversight and contribution to AI safety features.
 
 By providing these tools, we aim to foster a community that is not only technically proficient but also ethically aware and capable of navigating the evolving AI landscape safely.
+
+### Paperclip AI Integration
+Paperclip AI adds **modularity, extensibility, and seamless integration** to your AI ecosystem, making it easier to build custom agent workflows and integrate with your existing projects.
+
