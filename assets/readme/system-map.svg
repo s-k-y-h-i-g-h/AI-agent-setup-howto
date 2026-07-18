@@ -32,7 +32,7 @@
   <!-- Hermes -> FreeLLMAPI -->
   <line x1="540" y1="110" x2="580" y2="110" stroke="#00ff88" stroke-width="2" marker-end="url(#arrowhead)"/>
   <!-- OpenClaw -> FreeLLMAPI (shared credit) -->
-  <line x1="220" y1="130" x2="580" y2="130" stroke="#00ff88" stroke-width="2" stroke-dasharray="4 2" marker-end="url(#arrowhead)"/>
+  <polyline points="220,130 220,170 580,170 580,110" stroke="#00ff88" stroke-width="2" fill="none" stroke-dasharray="4 2" marker-end="url(#arrowhead)"/>
 
   <!-- Labels -->
   <text x="290" y="150" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#e0e0e0">Organise Agents</text>
