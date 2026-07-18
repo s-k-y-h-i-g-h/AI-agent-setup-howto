@@ -70,12 +70,14 @@ Our installer uses a robust three-stage process to seamlessly set up your enviro
 ---
 
 ## Documentation
+## Documentation
 
-For more in-depth information and specific guides:
 -   **[Installation Guide](INSTALL.md)**: Step-by-step installation instructions.
 -   **[Project Specification (SPEC.md)](SPEC.md)**: Detailed technical architecture and design choices.
 -   **[GitHub Ecosystem Workflow Guide (docs/github-workflow.md)](docs/github-workflow.md)**: Learn how to integrate GitHub into your AI workflow.
 -   **[Our Philosophy (docs/philosophy.md)](docs/philosophy.md)**: Understand the core principles guiding this project.
+-   **[Awesome LLM Apps (Shubhamsaboo)](https://github.com/Shubhamsaboo/awesome-llm-apps)**: Curated collection of open‑source LLM agents, skills, and RAG templates that can be added to OpenClaw/Paperclip/Hermes.
+
 
 ---
 
