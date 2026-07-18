@@ -36,17 +36,20 @@ We adhere to the principle that "matters of little concern should be treated ser
 ## Getting Started
 
 🚀 **[Installation Guide](INSTALL.md)**: Your step-by-step instructions to get your AI agent ecosystem up and running.
-
 📖 **[GitHub Ecosystem Workflow Guide](docs/github-workflow.md)**: Learn how to master GitHub for version control, collaborative projects, and seamlessly integrating your AI agents into your development workflow. This is the very workflow we use to build this installer!
 
 ---
 
 ## The AI Ecosystem You'll Control
-## What This Installer Sets Up
 
--   **OpenClaw**: your personal assistant
--   **Paperclip**: your organisation of AI agents
--   **FreeLLMAPI**: used by both Hermes and OpenClaw for free API credits
+This installer sets up three core components that work together to give you a powerful, personal AI assistant ecosystem:
+
+- **OpenClaw**: **your personal assistant** – the operating system for your AI agents, providing the foundation and tools to build, manage, and orchestrate AI workflows.
+- **Paperclip**: **your organisation of AI agents** – a framework that lets you create, organise, and manage teams of AI agents to tackle complex tasks.
+- **Hermes**: **the AI agent that Paperclip uses for the actual work** – the intelligent assistant that performs the reasoning, coding, analysis, and creative tasks assigned by your Paperclip agent organisation.
+- **FreeLLMAPI**: **used by both Hermes and OpenClaw for free API credits** – an aggregation service that intelligently routes your AI requests to various cloud LLM providers, optimising for free-tier usage and diverse model access.
+
+Together, these tools give you a complete, locally-controlled environment where you can harness the power of AI agents without needing deep infrastructure expertise.
 
 ---
 
