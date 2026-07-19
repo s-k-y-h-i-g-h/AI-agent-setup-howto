@@ -76,7 +76,7 @@ Our installer uses a robust three-stage process to seamlessly set up your enviro
 -   **[GitHub Ecosystem Workflow Guide (docs/github-workflow.md)](docs/github-workflow.md)**: Learn how to integrate GitHub into your AI workflow.
 -   **[Our Philosophy (docs/philosophy.md)](docs/philosophy.md)**: Understand the core principles guiding this project.
 -   **[Optional Components (docs/optional-components.md)](docs/optional-components.md)**: Voice mode, security scanning, and other add-ons (documented, not yet automated).
--   **[Awesome LLM Apps (Shubhamsaboo)](https://github.com/Shubhamsaboo/awesome-llm-apps)**: Curated collection of open‑source LLM agents, skills, and RAG templates that can be added to OpenClaw/Paperclip/Hermes.
+
 
 ---
 

@@ -182,9 +182,7 @@ we're exploring include:
   [llama.cpp](https://github.com/ggml-org/llama.cpp)
 - **Lightweight backend storage** — Structured data via
   [PocketBase](https://github.com/pocketbase/pocketbase)
-- **More agent skills** — From the
-  [Awesome LLM Apps](https://github.com/Shubhamsaboo/awesome-llm-apps)
-  collection
+|- **More agent skills** — Discover curated collections of useful skills from the community
 
 Each will get its own section here with requirements, install steps, and
 integration notes as we validate them.
