@@ -76,9 +76,9 @@ Our installer uses a robust three-stage process to seamlessly set up your enviro
 -   **[GitHub Ecosystem Workflow Guide (docs/github-workflow.md)](docs/github-workflow.md)**: Learn how to integrate GitHub into your AI workflow.
 -   **[Our Philosophy (docs/philosophy.md)](docs/philosophy.md)**: Understand the core principles guiding this project.
 -   **[Optional Components (docs/optional-components.md)](docs/optional-components.md)**: Voice mode, security scanning, and other add-ons (documented, not yet automated).
+-   **[Dokploy Setup (docs/setup-dokploy.md)](docs/setup-dokploy.md)**: Guide to run Dokploy on WSL 2.
 
-
----
+|
 
 ## Feedback & Contributions
 

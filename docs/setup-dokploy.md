@@ -122,5 +122,3 @@ Once logged in, you can create apps and services, e.g.:
 
 See the Dokploy CLI documentation for more commands:
 https://docs.dokploy.com/docs/cli
-
-======================================================================
