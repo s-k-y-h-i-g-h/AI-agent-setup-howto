@@ -70,14 +70,9 @@ Our installer uses a robust three-stage process to seamlessly set up your enviro
 ---
 
 ## Documentation
-
--   **[Installation Guide](INSTALL.md)**: Step-by-step installation instructions.
--   **[Project Specification (SPEC.md)](SPEC.md)**: Detailed technical architecture and design choices.
--   **[GitHub Ecosystem Workflow Guide (docs/github-workflow.md)](docs/github-workflow.md)**: Learn how to integrate GitHub into your AI workflow.
--   **[Our Philosophy (docs/philosophy.md)](docs/philosophy.md)**: Understand the core principles guiding this project.
--   **[Optional Components (docs/optional-components.md)](docs/optional-components.md)**: Voice mode, security scanning, and other add-ons (documented, not yet automated).
--   **[Dokploy Setup (docs/setup-dokploy.md)](docs/setup-dokploy.md)**: Guide to run Dokploy on WSL 2.
-
+| 
+   -   **[Paperclip Service (docs/paperclip-service.md)](docs/paperclip-service.md)**: Instructions to run Paperclip as a systemd service.
+   |
 |
 
 ## Feedback & Contributions
