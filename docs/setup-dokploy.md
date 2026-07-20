@@ -73,7 +73,7 @@ that your WSL 2 distro has on the virtual network:
 
     ip -4 addr show eth0 | grep -oP '(?<=inet\s)\d+(\.\d+){3}'
 
-Suppose it is `172.29.182.177`.  Then open port 3000 in the Windows firewall
+Suppose it is 172.29.182.177.  Then open port 3000 in the Windows firewall
 (or let Docker Desktop handle it) and visit:
 
     http://172.29.182.177:3000
@@ -102,5 +102,32 @@ Troubleshooting
 That’s it!  You now have a fully functional Dokploy control plane running
 inside WSL 2, ready to orchestrate your AI‑agent containers, micro‑services,
 or any other workload you wish to deploy.
+
+=== Step 6 – Install Dokploy CLI (optional) ==============================
+
+If you prefer to manage Dokploy from the command line, you can install the
+official Dokploy CLI:
+
+    npm install -g dokploy-cli
+
+Then authenticate with your Dokploy instance:
+
+    dokploy auth login --url http://127.0.0.1:3000 --token <YOUR_ADMIN_TOKEN>
+
+Replace <YOUR_ADMIN_TOKEN> with the token printed at the end of the Dokploy
+installer (or retrieve it via the Dokploy UI under Settings → API Tokens).
+
+Once logged in, you can create apps and services, e.g.:
+
+    dokploy apps:create my-ai-app
+    dokploy services:create my-ai-app freellmapi \
+        --image freellmapi/freellmapi:latest \
+        --port 3001:3000 \
+        --env MODEL=gpt-4o-mini \
+        --env LOG_LEVEL=info \
+        --replicas 1
+
+See the Dokploy CLI documentation for more commands:
+https://docs.dokploy.com/docs/cli
 
 ======================================================================
