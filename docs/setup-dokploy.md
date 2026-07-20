@@ -1,14 +1,7 @@
-=== Dokploy on WSL 2 – quick start guide ==============================
-
+# Dokploy on WSL 2 – quick start guide
 Prerequisites
 -------------
-- Windows 10/11 with WSL 2 enabled.
-- Docker Desktop for Windows installed and configured to use the WSL 2
-  backend (Settings → Resources → WSL Integration → enable your distro).
-- Your WSL distro (e.g., Ubuntu) is launched and you are at a bash prompt.
-
-Step 1 – make sure Docker is running
--------------------------------------
+ backend (Settings → Resources → WSL Integration → enable your distro).
 From your WSL terminal run:
 
     docker info
@@ -103,7 +96,7 @@ That’s it!  You now have a fully functional Dokploy control plane running
 inside WSL 2, ready to orchestrate your AI‑agent containers, micro‑services,
 or any other workload you wish to deploy.
 
-=== Step 6 – Install Dokploy CLI (optional) ==============================
+## Step 6 – Install Dokploy CLI (optional)
 
 If you prefer to manage Dokploy from the command line, you can install the
 official Dokploy CLI:
