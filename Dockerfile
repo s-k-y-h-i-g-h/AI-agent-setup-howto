@@ -1,24 +1,15 @@
-# --- Stage 1: Build the site ---
-FROM node:22-alpine AS builder
+# Dockerfile
+
+# Stage 1: Build
+FROM node:20-alpine AS build
 WORKDIR /app
-
-# Using npm install instead of npm ci for better compatibility with existing lockfiles
 COPY package*.json ./
-RUN npm install
-
-# Copy the rest of the project and build it
+RUN npm ci
 COPY . .
 RUN npm run build
 
-# --- Stage 2: Serve the files ---
+# Stage 2: Serve
 FROM nginx:alpine
-# Remove default nginx static content
-RUN rm -rf /usr/share/nginx/html/*
-# Copy the built site from the builder stage into Nginx's web folder
-COPY --from=builder /app/dist /usr/share/nginx/html
-
-# Expose port 80
+COPY --from=build /app/dist /usr/share/nginx/html
 EXPOSE 80
-
-# Start Nginx
 CMD ["nginx", "-g", "daemon off;"]
